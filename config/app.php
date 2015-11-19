@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APPLICATION_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'de',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'partyhartyocto'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -137,6 +137,9 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        // Custom providers
+        Barryvdh\Debugbar\ServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -193,6 +196,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        // Custom facades
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 
