@@ -139,6 +139,7 @@ return [
 
         // Custom providers
         Barryvdh\Debugbar\ServiceProvider::class,
+        Alaouy\Youtube\YoutubeServiceProvider::class,
 
         /*
          * Application Service Providers...
