@@ -16,4 +16,8 @@ Route::get('/', function () {
 });
 
 
+// dashboard routes
 Route::get('dashboard', 'DashboardController@index');
+Route::get('videos', 'DashboardController@videos');
+Route::get('playlists', 'DashboardController@playlists');
+Route::get('analytics', 'DashboardController@nalytics');
