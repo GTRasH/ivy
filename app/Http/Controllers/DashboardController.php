@@ -14,10 +14,18 @@ class DashboardController extends Controller
 
     public function index() {
 
-        //$channel = Youtube::getChannelById('UCZBzhwB0w9M686PF7Z649Nw');
-        // dd($channel);
-        $channel='test';
-        return view('dashboard')->with('channel',$channel);
+        $channel = Youtube::getChannelById('UCZBzhwB0w9M686PF7Z649Nw');
+//dd($channel->statistics->viewCount);
+    $data=array(
+            'id'            =>  $channel->id,
+            'title'         =>  $channel->snippet->title,
+            'description'   =>  $channel->snippet->description,
+            'viewcount'     =>  $channel->statistics->viewCount,
+            'subscribers'   =>  $channel->statistics->subscriberCount,
+            'comments'      =>  $channel->statistics->commentCount,
+            'videos'        =>  $channel->statistics->videoCount
+            );
+        return view('dashboard')->with('data',$data);
 
     }
 
