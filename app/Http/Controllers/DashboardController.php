@@ -20,4 +20,22 @@ class DashboardController extends Controller
         return view('dashboard')->with('channel',$channel);
 
     }
+
+    public function videos() {
+
+        return view('videos');
+
+    }
+
+    public function playlists() {
+
+        return view('playlists');
+
+    }
+
+    public function analytics() {
+
+        return view('analytics');
+
+    }
 }
