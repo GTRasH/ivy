@@ -22,6 +22,8 @@ Route::get('videos', 'DashboardController@videos');
 Route::get('playlists', 'DashboardController@playlists');
 Route::get('analytics', 'DashboardController@nalytics');
 
+// Userdata
 Route::get('profile', 'UserController@profile');
 
+// Administrative Data
 Route::get('settings', 'AdminController@settings');
