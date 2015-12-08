@@ -27,3 +27,8 @@ Route::get('profile', 'UserController@profile');
 
 // Administrative Data
 Route::get('settings', 'AdminController@settings');
+
+// fpa routes
+Route::get('fpa','FPAController@index');
+Route::get('fpa/leman','FPAController@leman');
+ROute::get('fpa/shorts','FPAController@shorts');
