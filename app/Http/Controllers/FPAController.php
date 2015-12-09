@@ -27,6 +27,7 @@ class FPAController extends Controller
     public function leman()
     {
         // return LAMEMAN
+        return view('fpa.leman');
     }
 
     /**
