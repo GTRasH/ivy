@@ -14,12 +14,9 @@ class DashboardController extends Controller
 
     public function index() {
 
+        // Channel R3m0t3 j03
         $channel = Youtube::getChannelById('UCZBzhwB0w9M686PF7Z649Nw');
 
-        if (!empty($channel->id)) {
-
-
-//dd($channel->statistics->viewCount);
             $data = array(
                 'id' => $channel->id,
                 'title' => $channel->snippet->title,
@@ -30,28 +27,24 @@ class DashboardController extends Controller
                 'videos' => $channel->statistics->videoCount
             );
 
-            return view('dashboard')->with('data',$data);
-        }
-        else {
-            return 'sorry, connecting to youtube failed';
-        }
+            return view('youtube.dashboard')->with('data',$data);
     }
 
     public function videos() {
 
-        return view('videos');
+        return view('youtube.videos');
 
     }
 
     public function playlists() {
 
-        return view('playlists');
+        return view('youtube.playlists');
 
     }
 
     public function analytics() {
 
-        return view('analytics');
+        return view('youtube.analytics');
 
     }
 }
