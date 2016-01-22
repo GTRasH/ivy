@@ -18,17 +18,17 @@ Route::get('/', function () {
 
 // dashboard routes
 Route::get('dashboard', 'DashboardController@index');
-Route::get('videos', 'DashboardController@videos');
+Route::get('videos',    'DashboardController@videos');
 Route::get('playlists', 'DashboardController@playlists');
-Route::get('analytics', 'DashboardController@nalytics');
+Route::get('analytics', 'DashboardController@analytics');
 
 // Userdata
-Route::get('profile', 'UserController@profile');
+Route::get('profile',   'UserController@profile');
 
 // Administrative Data
-Route::get('settings', 'AdminController@settings');
+Route::get('settings',  'AdminController@settings');
 
 // fpa routes
-Route::get('fpa','FPAController@index');
-Route::get('fpa/leman','FPAController@leman');
+Route::get('fpa',       'FPAController@index');
+Route::get('fpa/leman', 'FPAController@leman');
 ROute::get('fpa/shorts','FPAController@shorts');
