@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "437a19db72b11f37b47c9d9ffeca3fdd",
-    "content-hash": "545b25e81a341f10b3dcfd46250e36d9",
+    "hash": "e0db4855420d7daa08a860f610c17938",
+    "content-hash": "378a13de402e1e51b20b592430f69fb7",
     "packages": [
         {
             "name": "alaouy/youtube",
@@ -993,6 +993,47 @@
                 "php"
             ],
             "time": "2015-12-04 15:28:43"
+        },
+        {
+            "name": "overtrue/laravel-lang",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-lang.git",
+                "reference": "a8c8bbe91e03781d1b06851a3e33b6cdd4598827"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/a8c8bbe91e03781d1b06851a3e33b6cdd4598827",
+                "reference": "a8c8bbe91e03781d1b06851a3e33b6cdd4598827",
+                "shasum": ""
+            },
+            "require": {
+                "caouecs/laravel4-lang": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelLang\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "List of 37 languages for Laravel 5",
+            "keywords": [
+                "languages",
+                "laravel",
+                "overtrue"
+            ],
+            "time": "2015-07-23 01:42:49"
         },
         {
             "name": "paragonie/random_compat",
@@ -3349,7 +3390,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "overtrue/laravel-lang": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

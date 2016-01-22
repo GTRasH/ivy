@@ -15,8 +15,10 @@
         <table class="table table-striped">
             <thead>
             <tr>
+                <th>Thumbnail</th>
                 <th>Channel-ID</th>
                 <th>Title</th>
+                <th>Country</th>
                 <th>AllViews</th>
                 <th>Subscribers</th>
                 <th>Comments</th>
@@ -25,8 +27,10 @@
             </thead>
             <tbody>
             <tr>
+                <td><img src="{{$data['thumbnail']}}" alt="{{$data['title']}}"></td>
                 <td>{{$data['id']}}</td>
                 <td>{{$data['title']}}</td>
+                <td>{{$data['country']}}</td>
                 <td>{{$data['viewcount']}}</td>
                 <td>{{$data['subscribers']}}</td>
                 <td>{{$data['comments']}}</td>

@@ -24,7 +24,9 @@ class DashboardController extends Controller
                 'viewcount' => $channel->statistics->viewCount,
                 'subscribers' => $channel->statistics->subscriberCount,
                 'comments' => $channel->statistics->commentCount,
-                'videos' => $channel->statistics->videoCount
+                'videos' => $channel->statistics->videoCount,
+                'thumbnail' => $channel->snippet->thumbnails->default->url,
+                'country' => $channel->snippet->country
             );
 
             return view('youtube.dashboard')->with('data',$data);

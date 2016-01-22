@@ -3455,5 +3455,48 @@
             "laravel",
             "lpm"
         ]
+    },
+    {
+        "name": "overtrue/laravel-lang",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/overtrue/laravel-lang.git",
+            "reference": "a8c8bbe91e03781d1b06851a3e33b6cdd4598827"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/a8c8bbe91e03781d1b06851a3e33b6cdd4598827",
+            "reference": "a8c8bbe91e03781d1b06851a3e33b6cdd4598827",
+            "shasum": ""
+        },
+        "require": {
+            "caouecs/laravel4-lang": "~2.0"
+        },
+        "time": "2015-07-23 01:42:49",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Overtrue\\LaravelLang\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "overtrue",
+                "email": "anzhengchao@gmail.com"
+            }
+        ],
+        "description": "List of 37 languages for Laravel 5",
+        "keywords": [
+            "languages",
+            "laravel",
+            "overtrue"
+        ]
     }
 ]
